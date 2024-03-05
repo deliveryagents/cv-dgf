@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascript Html</title>
+  <style>
+  
+  #form{
+    width: 300px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  #form h1{
+    color: #0f2027;
+    text-align: center;
+  }
+
+  #form button{
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 4px;
+  }
+  .input-control{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-control input{
+    border: 2px solid white;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-size: 12px;
+  }
+  .input-control input:focus{
+    outline: 0;
+  }
+  .input-control.sucess input{
+    border-color: #09c372;
+  }
+  .input-control.error input{
+    border-color: #ff3860;
+  }
+  .input-control .error{
+    color: red;
+    font-size: 9px;
+    height: 13px;
+  }
+     
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <form id="form" action="result.html" method="GET">
+        <h1>Create Account</h1>
+        <div class="input-control">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="text">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="password">Password</label>
+            <input id="password"name="password" type="password">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="password2">Password again</label>
+            <input id="password2"name="password2" type="password">
+                <div class="error"></div>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>
